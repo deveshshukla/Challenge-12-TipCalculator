@@ -50,11 +50,11 @@ calculate.addEventListener('click', function () {
         let splitBill = (billAmt / totPeople);
         let splitTotBillAmt = ((((billAmt * givenTip) / 100) + billAmt) / totPeople);
 
-        document.getElementById("tipPerPerson").innerText = `${splitTip}`;
+        document.getElementById("tipPerPerson").innerText = `₹${splitTip}`;
 
-        document.getElementById("billPerPerson").innerText = `${splitBill}`;
+        document.getElementById("billPerPerson").innerText = `₹${splitBill}`;
 
-        document.getElementById("totAmtPerPerson").innerText = `${splitTotBillAmt}`;
+        document.getElementById("totAmtPerPerson").innerText = `₹${splitTotBillAmt}`;
 
     } else {
         alert("Please enter correct value");
